@@ -8,12 +8,13 @@ public class GuessRand {
 		// Instantiate (create) a new Random() object 'r'
 		rand = r.nextInt(100)+1;// Get a random number between 1-100
 		
-		while(success =false   /*loop until 'success' is true.*/ ) {
+		while(success ==false) {
+			;
 			int guess = 0;
 			Scanner console =new Scanner(System.in);
-			guess = console.nextInt();
 			// Instantiate a new Scanner 'console'
-			System.out.println("Your Guess: " +guess);
+			System.out.println("Your Guess: ?");
+			guess = console.nextInt();
 			 // Get an integer from the user.
 			success =compare(guess, rand);  // all 'compare()' method
 		}
